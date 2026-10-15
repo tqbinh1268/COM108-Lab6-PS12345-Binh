@@ -46,5 +46,12 @@ void lamMinTinHieu(float raw[], float smooth[], int n) {
     //   + Tại ô cuối (i = n-1):  smooth[n-1] = (raw[n-2] + raw[n-1]) / 2.0f
     //   + Tại ô giữa (1 <= i <= n-2): smooth[i] = (raw[i-1] + raw[i] + raw[i+1]) / 3.0f
     // LƯU Ý: Tuyệt đối không đọc tràn mảng và không dùng lệnh in ra màn hình trong hàm!
-    
+    smooth[0] = raw[0];
+    if(n>=2){
+        for(int i=0; i<n;i++){
+            if(i==0) smooth[0] = (raw[0] + raw[1]) / 2.0f;
+            else if (i==n-1) smooth[n-1] = (raw[n-2] + raw[n-1]) / 2.0f;
+            else smooth[i] = (raw[i-1] + raw[i] + raw[i+1]) / 3.0f;
+        }
+    }
 }

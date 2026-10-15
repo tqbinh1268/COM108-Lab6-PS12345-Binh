@@ -11,14 +11,22 @@
 ---
 
 ### Lần 1: Bài 1 - Bộ Lọc Làm Mịn Tín Hiệu (Moving Average)
-- Trạng thái: Chờ chấm
+- Trạng thái: Fail
 - Prompt hỏi AI (nếu có): 
 - Lỗi phát hiện qua Test (nếu có): 
 - Cách sửa / Bài học: 
 
+[CHAY TEST BAI 1: BO LOC LAM MIN TIN HIEU MOVING AVERAGE]
+FAILED Kien truc: Phat hien lenh 'printf' ben trong ham lamMinTinHieu!
+--> YEU CAU: Ham chi tinh toan luu vao mang smooth[]. In an phai nam o main()!
+
 ### Lần 2: Bài 1
-- Trạng thái: 
+- Trạng thái: Pass 100%
 - Lỗi / Cách sửa: 
+
+ongmuoigiao@Trans-MacBook-Air-2 COM108-Lab6-PS12345-Binh % gcc -Wall tests/test_bai1.c -o run_test1 -lm && ./run_test1
+[CHAY TEST BAI 1: BO LOC LAM MIN TIN HIEU MOVING AVERAGE]
+>>> BAI 1: PASS 100% TEST CASES!
 
 ### Lần 3: Bài 1 (Dự phòng)
 - Trạng thái: 
